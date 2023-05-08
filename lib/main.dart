@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_ordering_app/View/Onboarding_Screen/Onboarding_Screen.dart';
 import 'package:food_ordering_app/View/SplashScreen.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Splash_Screen(),
+      home: const Onboarding_Screen(),
     );
   }
 }
