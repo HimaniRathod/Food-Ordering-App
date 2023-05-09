@@ -23,6 +23,34 @@ class TTexttheme {
         fontWeight:FontWeight.w600),
   );
 
+  static TextTheme Logintext = TextTheme(
+
+    titleLarge:GoogleFonts.poppins(
+        fontSize:30,
+        color:black,
+        fontWeight:FontWeight.w700),
+
+    titleMedium:GoogleFonts.poppins(
+        fontSize:18,
+        color:black,
+        fontWeight:FontWeight.w500),
+
+    titleSmall:GoogleFonts.poppins(
+      fontSize:12,
+      color:grey,
+    ),
+    labelSmall:GoogleFonts.poppins(
+      fontSize:20,
+      color:white,
+      fontWeight: FontWeight.w700
+    ),
+    labelMedium: GoogleFonts.poppins(
+        fontSize:30,
+        color:dgreen,
+        fontWeight: FontWeight.w700
+    ),
+
+  );
 
 
 

@@ -1,6 +1,5 @@
 
 //ON BOARDING TEXT
-
 const String onBoardingTitle1="Place Order";
 const String onBoardingTitle2="Secure Payment";
 const String onBoardingTitle3="Enjoy the Food";
@@ -12,3 +11,7 @@ const String onBoardingSubTitle3="Enjoy your favorite meals with our user-friend
 const String onBoardingCounter1="1/3";
 const String onBoardingCounter2="2/3";
 const String onBoardingCounter3="3/3";
+
+//loginpage texts
+const String LoginTitle="Hi,Welcome back!";
+const String Loginsubtitle="Login to your account";

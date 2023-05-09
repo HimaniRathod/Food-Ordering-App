@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_ordering_app/Constants/colors.dart';
+import 'package:food_ordering_app/View/Loginpage/Loginpage.dart';
 import 'package:food_ordering_app/View/Onboarding_Screen/Onboarding_Screen.dart';
 import 'package:food_ordering_app/View/SplashScreen.dart';
 
@@ -12,12 +14,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner:false,//don't shoe the debug label
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch:Colors.orange,
       ),
-      home: const Onboarding_Screen(),
+      home: Loginpage(),
     );
   }
 }

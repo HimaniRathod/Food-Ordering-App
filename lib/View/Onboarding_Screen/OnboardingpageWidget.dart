@@ -13,6 +13,8 @@ class onboardingpageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Container(
       color: model.bgcolor,
       padding: const EdgeInsets.all(10.0),
@@ -21,7 +23,7 @@ class onboardingpageWidget extends StatelessWidget {
         children: [
           Image(
             image: AssetImage(model.image),
-            height: model.height * 0.4,
+            height: size.height * 0.4,
           ),
           Column(
             children: [
