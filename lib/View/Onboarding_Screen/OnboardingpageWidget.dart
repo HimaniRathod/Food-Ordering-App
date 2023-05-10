@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 import '../../Constants/Theme.dart';
-import '../../Model/Model_onboarding.dart';
+import '../../Model/onboarding_Model.dart';
 
 class onboardingpageWidget extends StatelessWidget {
   const onboardingpageWidget({

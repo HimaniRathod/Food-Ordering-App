@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_ordering_app/Constants/colors.dart';
 import 'package:food_ordering_app/View/Loginpage/Loginpage.dart';
 import 'package:food_ordering_app/View/Onboarding_Screen/Onboarding_Screen.dart';
+import 'package:food_ordering_app/View/Registrationpage/Registrationpage.dart';
 import 'package:food_ordering_app/View/SplashScreen.dart';
 
 void main() {

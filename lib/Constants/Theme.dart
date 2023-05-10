@@ -23,7 +23,7 @@ class TTexttheme {
         fontWeight:FontWeight.w600),
   );
 
-  static TextTheme Logintext = TextTheme(
+  static TextTheme LRtext = TextTheme(
 
     titleLarge:GoogleFonts.poppins(
         fontSize:30,
@@ -49,6 +49,10 @@ class TTexttheme {
         color:dgreen,
         fontWeight: FontWeight.w700
     ),
+    displaySmall: GoogleFonts.poppins(
+        fontSize:16,
+        color:black,
+        fontWeight:FontWeight.w500),
 
   );
 
