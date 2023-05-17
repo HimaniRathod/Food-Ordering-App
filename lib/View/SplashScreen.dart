@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food_ordering_app/Constants/image_strings.dart';
 import 'package:lottie/lottie.dart';
 
 import 'Onboarding_Screen/Onboarding_Screen.dart';
@@ -36,11 +37,12 @@ class _Splash_ScreenState extends State<Splash_Screen> {
     return Scaffold(
       body: Center(
         child: Lottie.asset(
-          'Animated_Logo.json',
+          AnimationString,
           width: size.width * 0.8,
           height: size.height,
           repeat:false,
         ),
+
       ),
     );
   }

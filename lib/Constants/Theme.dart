@@ -4,6 +4,7 @@ import 'colors.dart';
 
 class TTexttheme {
 
+  //onboarding text theme
   static TextTheme onboardingtext = TextTheme(
     titleLarge: GoogleFonts.poppins(
         fontSize:30,
@@ -23,6 +24,7 @@ class TTexttheme {
         fontWeight:FontWeight.w600),
   );
 
+  //Login Registration text theme
   static TextTheme LRtext = TextTheme(
 
     titleLarge:GoogleFonts.poppins(

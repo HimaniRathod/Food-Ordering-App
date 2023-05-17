@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_ordering_app/Constants/Theme.dart';
+import 'package:food_ordering_app/View/Register/Register.dart';
+import 'package:get/get.dart';
 
 import '../../Constants/colors.dart';
 import '../../Constants/image_strings.dart';
@@ -32,7 +34,7 @@ class Loginfooter extends StatelessWidget {
 
           ),
           const Padding(
-            padding: EdgeInsets.only(bottom: 40.0),
+            padding: EdgeInsets.only(bottom: 30.0),
           ),
           SizedBox(
             width:size.width*0.8,
@@ -51,7 +53,9 @@ class Loginfooter extends StatelessWidget {
                 child: Text(
                   'Create Account',
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(Register());
+                },
               ),
             ],
 

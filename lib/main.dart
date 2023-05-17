@@ -1,11 +1,17 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:food_ordering_app/Constants/colors.dart';
 import 'package:food_ordering_app/View/Loginpage/Loginpage.dart';
-import 'package:food_ordering_app/View/Onboarding_Screen/Onboarding_Screen.dart';
-import 'package:food_ordering_app/View/Registrationpage/Registrationpage.dart';
+import 'package:food_ordering_app/View/Register/Register.dart';
 import 'package:food_ordering_app/View/SplashScreen.dart';
+import 'package:get/get.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
   runApp(const MyApp());
 }
 
@@ -16,13 +22,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner:false,//don't shoe the debug label
       theme: ThemeData(
         primarySwatch:Colors.orange,
       ),
-      home: Loginpage(),
+      home:Loginpage(),
     );
   }
 }
