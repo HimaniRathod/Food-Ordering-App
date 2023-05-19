@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_ordering_app/Constants/Theme.dart';
+import 'package:food_ordering_app/Controller/Login_Controller.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../Constants/colors.dart';
 import '../../Constants/image_strings.dart';
@@ -10,6 +13,9 @@ class Loginfooter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final GLogin = Get.put(LoginController());
+
     final size=MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.symmetric( horizontal: 20),
@@ -37,7 +43,9 @@ class Loginfooter extends StatelessWidget {
           SizedBox(
             width:size.width*0.8,
             height:size.height*0.06,
-            child:OutlinedButton.icon(onPressed: (){},
+            child:OutlinedButton.icon(onPressed: (){
+              GLogin.GoogleLogin();
+            },
               icon:  Image(image: AssetImage(sgoogle),width:40.0,
                 alignment:Alignment.centerLeft,),
               label:Text('Google',style:TTexttheme.LRtext.labelMedium,),),
