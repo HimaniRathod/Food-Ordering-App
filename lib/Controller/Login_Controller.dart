@@ -1,24 +1,19 @@
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:food_ordering_app/Constants/colors.dart';
-import 'package:food_ordering_app/Constants/image_strings.dart';
 import 'package:food_ordering_app/View/Dashboard/Dashboard.dart';
-import 'package:food_ordering_app/View/Loginpage/Loginpage.dart';
-import 'package:food_ordering_app/View/Register/Register.dart';
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginController extends GetxController{
 
-  late TextEditingController usernameController;
-  late TextEditingController passwordController;
-
-  //initialize string
-  String username='';
-  String password='';
+  //TextEditing Controller
+   final usernameController = TextEditingController();
+   final passwordController = TextEditingController();
 
   //formvalidation formkey
-  GlobalKey<FormState> Lformkey =GlobalKey<FormState>();
+  final formkey =GlobalKey<FormState>();
 
   //for show password
   final RxBool ispasswordvisible=false.obs;
@@ -32,20 +27,48 @@ class LoginController extends GetxController{
 
   //for checkbox
   final isChecked = false.obs;
-  void onCheckboxChange(bool? value) {
-    isChecked.value = value!;
-  }
+   void onCheckboxChange(bool? value) async {
 
-  //Authentication .instance
-  static LoginController instance = Get.find();
+     isChecked.value = value!;
+     SharedPreferences pref = await SharedPreferences.getInstance();
+     pref.setString('email', usernameController.text);
+     pref.setString('password', passwordController.text);
+     pref.setBool('rememberme', isChecked.value);
+   }
+
+
+   //if we used remeberme
+   void loadUserPassword() async {
+     try {
+       SharedPreferences pref = await SharedPreferences.getInstance();
+
+       var email = pref.getString('email') ?? '';
+       var password = pref.getString('password') ?? '';
+       var remember = pref.getBool('rememberme') ?? false;
+
+       if (remember) {
+         isChecked.value = true;
+         usernameController.text = email;
+         passwordController.text = password;
+       }
+     } catch (e) {
+       print(e);
+     }
+   }
+
+
+   //Authentication .instance
+  static LoginController get instance => Get.find();
+
   //email,password
   late Rx<User?> _user;
   FirebaseAuth auth = FirebaseAuth.instance;
 
   @override
   void onInit() {
-    // TODO: implement onReady
-    super.onReady();
+
+    super.onInit();
+    loadUserPassword();
     _user=Rx<User?>(auth.currentUser);
     //user will be notified through this bindstream
     _user.bindStream(auth.userChanges());
@@ -53,20 +76,20 @@ class LoginController extends GetxController{
   }
 
 
-  _initialScreen(User? user){
-    if(user==null){
-      print("Login page");
-      Get.offAll(()=>Loginpage());
-    }
-    else{
-      Get.offAll(()=>Dashboard());
-    }
-  }
+  // _initialScreen(User? user){
+  //   if(user==null){
+  //     print("Login page");
+  //     Get.offAll(()=>Loginpage());
+  //   }
+  //   else{
+  //     Get.offAll(()=>Dashboard());
+  //   }
+  // }
 
   void login(){
-    if (Lformkey.currentState!.validate()) {
-      username = usernameController.text;
-      password = passwordController.text;
+    if (formkey.currentState!.validate()) {
+      var username = usernameController.text.trim();
+      var password = passwordController.text.trim();
       DLogin(username, password);
     }
   }

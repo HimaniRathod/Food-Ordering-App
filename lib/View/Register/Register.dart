@@ -15,7 +15,7 @@ class Register extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    RegisterController CRegister = Get.put(RegisterController());
+    final CRegister = Get.put(RegisterController());
 
     //validation for name
     String? validatorName(String? value) {

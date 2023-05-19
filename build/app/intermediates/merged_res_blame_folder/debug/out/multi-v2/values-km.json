@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.food_ordering_app-mergeDebugResources-13:/values-km/values-km.xml",
+            "outputFile": "com.example.food_ordering_app-mergeDebugResources-14:/values-km/values-km.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ashu\\.gradle\\caches\\transforms-3\\f46b9773282b7a3d38863a46e0e0b5d1\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-km\\values.xml",
+                    "source": "C:\\Users\\ashu\\.gradle\\caches\\transforms-3\\10e411e408063a3ed7eb4e7e19983f6d\\transformed\\jetified-play-services-basement-18.2.0\\res\\values-km\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

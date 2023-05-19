@@ -44,40 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDsamClwu1Wnizf97ltLkOMAVtv3mLC8QU',
-    appId: '1:1072924263093:web:d3449fed98bee6f5bab4fc',
-    messagingSenderId: '1072924263093',
-    projectId: 'food-ordering-app-bab62',
-    authDomain: 'food-ordering-app-bab62.firebaseapp.com',
-    storageBucket: 'food-ordering-app-bab62.appspot.com',
-    measurementId: 'G-C4YBS4GG9F',
+    apiKey: 'AIzaSyAb8gmUT9-1VCoO4BBCs-HaYBylPyvcCoQ',
+    appId: '1:363409048783:web:0ef6562ca478ca3914e3ba',
+    messagingSenderId: '363409048783',
+    projectId: 'food-ordering-app-e30fd',
+    authDomain: 'food-ordering-app-e30fd.firebaseapp.com',
+    storageBucket: 'food-ordering-app-e30fd.appspot.com',
+    measurementId: 'G-K4P3XFEMVG',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA6KTow6UM_WIeIzdf-_jtzLJMVfPlO8yA',
-    appId: '1:1072924263093:android:71300f49679c1b31bab4fc',
-    messagingSenderId: '1072924263093',
-    projectId: 'food-ordering-app-bab62',
-    storageBucket: 'food-ordering-app-bab62.appspot.com',
+    apiKey: 'AIzaSyDkTBQeKjXEN3uXp12jCGINHCT5FEqMgaE',
+    appId: '1:363409048783:android:44b914f84f61d8fd14e3ba',
+    messagingSenderId: '363409048783',
+    projectId: 'food-ordering-app-e30fd',
+    storageBucket: 'food-ordering-app-e30fd.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBT1fs63ySJAHrdL-BYa3JAjf6catetMhE',
-    appId: '1:1072924263093:ios:a1a390056b3ea64dbab4fc',
-    messagingSenderId: '1072924263093',
-    projectId: 'food-ordering-app-bab62',
-    storageBucket: 'food-ordering-app-bab62.appspot.com',
-    iosClientId: '1072924263093-8od8nclqm7v84000qfqun5kdqr2iju20.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCG2AqJAuPhQ1uJiQa2I-O-krkr-xy8MN8',
+    appId: '1:363409048783:ios:1b0ec4749455946d14e3ba',
+    messagingSenderId: '363409048783',
+    projectId: 'food-ordering-app-e30fd',
+    storageBucket: 'food-ordering-app-e30fd.appspot.com',
+    iosClientId: '363409048783-lnmt8u0hhs21h7bm4mt5u2iohjpiur9t.apps.googleusercontent.com',
     iosBundleId: 'com.example.foodOrderingApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBT1fs63ySJAHrdL-BYa3JAjf6catetMhE',
-    appId: '1:1072924263093:ios:a1a390056b3ea64dbab4fc',
-    messagingSenderId: '1072924263093',
-    projectId: 'food-ordering-app-bab62',
-    storageBucket: 'food-ordering-app-bab62.appspot.com',
-    iosClientId: '1072924263093-8od8nclqm7v84000qfqun5kdqr2iju20.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCG2AqJAuPhQ1uJiQa2I-O-krkr-xy8MN8',
+    appId: '1:363409048783:ios:1b0ec4749455946d14e3ba',
+    messagingSenderId: '363409048783',
+    projectId: 'food-ordering-app-e30fd',
+    storageBucket: 'food-ordering-app-e30fd.appspot.com',
+    iosClientId: '363409048783-lnmt8u0hhs21h7bm4mt5u2iohjpiur9t.apps.googleusercontent.com',
     iosBundleId: 'com.example.foodOrderingApp',
   );
 }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.food_ordering_app-mergeDebugResources-13:/values-gl/values-gl.xml",
+            "outputFile": "com.example.food_ordering_app-mergeDebugResources-14:/values-gl/values-gl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ashu\\.gradle\\caches\\transforms-3\\082fa8f1e076fd76c98f4d760b4e67b1\\transformed\\jetified-play-services-base-18.0.1\\res\\values-gl\\values.xml",
@@ -21,23 +21,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ashu\\.gradle\\caches\\transforms-3\\f46b9773282b7a3d38863a46e0e0b5d1\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-gl\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "129",
-                        "endOffsets": "324"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1080",
-                        "endColumns": "133",
-                        "endOffsets": "1209"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ashu\\.gradle\\caches\\transforms-3\\392643a040d0a7ef9b2ed4537c4719d5\\transformed\\browser-1.4.0\\res\\values-gl\\values-gl.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -52,6 +35,23 @@
                         "startOffsets": "2336,2443,2545,2657",
                         "endColumns": "106,101,111,105",
                         "endOffsets": "2438,2540,2652,2758"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ashu\\.gradle\\caches\\transforms-3\\10e411e408063a3ed7eb4e7e19983f6d\\transformed\\jetified-play-services-basement-18.2.0\\res\\values-gl\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "129",
+                        "endOffsets": "324"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1080",
+                        "endColumns": "133",
+                        "endOffsets": "1209"
                     }
                 },
                 {

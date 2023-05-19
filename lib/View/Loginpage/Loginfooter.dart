@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_ordering_app/Constants/Theme.dart';
-import 'package:food_ordering_app/View/Register/Register.dart';
-import 'package:get/get.dart';
 
 import '../../Constants/colors.dart';
 import '../../Constants/image_strings.dart';
@@ -54,7 +52,7 @@ class Loginfooter extends StatelessWidget {
                   'Create Account',
                 ),
                 onPressed: () {
-                  Get.to(Register());
+                  // Get.to(Register());
                 },
               ),
             ],

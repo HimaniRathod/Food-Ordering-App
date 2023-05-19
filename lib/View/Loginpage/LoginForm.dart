@@ -4,7 +4,6 @@ import 'package:food_ordering_app/Constants/Theme.dart';
 import 'package:food_ordering_app/Constants/colors.dart';
 import 'package:food_ordering_app/Controller/Login_Controller.dart';
 import 'package:get/get.dart';
-import 'package:flutter/material.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({Key? key}) : super(key: key);
@@ -15,7 +14,7 @@ class LoginForm extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     //Using LoginController
-    final LoginController CLogin = Get.put(LoginController());
+    final  CLogin = Get.put(LoginController());
 
     //validation for username
     String? validatorUsername(String? value) {
@@ -32,15 +31,13 @@ class LoginForm extends StatelessWidget {
       }
       return null;
     }
+    //
 
-    //initilize the controller
-    CLogin.usernameController = TextEditingController();
-    CLogin.passwordController = TextEditingController();
 
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+      padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
       child: Form(
-        key: CLogin.Lformkey,
+        key : CLogin.formkey,
         child: Column(
           children: [
             TextFormField(
@@ -55,7 +52,7 @@ class LoginForm extends StatelessWidget {
               validator: validatorUsername,
             ),
             const Padding(
-              padding: EdgeInsets.only(bottom: 20),
+              padding: const EdgeInsets.only(bottom: 20),
             ),
             Obx(
               () => TextFormField(

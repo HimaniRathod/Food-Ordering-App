@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.food_ordering_app-mergeDebugResources-13:/values/values.xml",
+            "outputFile": "com.example.food_ordering_app-mergeDebugResources-14:/values/values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ashu\\.gradle\\caches\\transforms-3\\4ca28c4a71705f8a687c69dda140a277\\transformed\\core-1.6.0\\res\\values\\values.xml",
@@ -78,23 +78,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ashu\\.gradle\\caches\\transforms-3\\f46b9773282b7a3d38863a46e0e0b5d1\\transformed\\jetified-play-services-basement-18.1.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "243,406",
-                        "endColumns": "63,166",
-                        "endOffsets": "306,572"
-                    },
-                    "to": {
-                        "startLines": "105,115",
-                        "startColumns": "4,4",
-                        "startOffsets": "6434,7612",
-                        "endColumns": "67,166",
-                        "endOffsets": "6497,7774"
-                    }
-                },
-                {
                     "source": "F:\\Flutter Projects\\Food-Ordering-App\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
@@ -111,6 +94,23 @@
                         "endLines": "133,136",
                         "endColumns": "12,12",
                         "endOffsets": "9435,9604"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ashu\\.gradle\\caches\\transforms-3\\10e411e408063a3ed7eb4e7e19983f6d\\transformed\\jetified-play-services-basement-18.2.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "243,406",
+                        "endColumns": "63,166",
+                        "endOffsets": "306,572"
+                    },
+                    "to": {
+                        "startLines": "105,115",
+                        "startColumns": "4,4",
+                        "startOffsets": "6434,7612",
+                        "endColumns": "67,166",
+                        "endOffsets": "6497,7774"
                     }
                 }
             ]
