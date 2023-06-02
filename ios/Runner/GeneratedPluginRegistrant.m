@@ -18,6 +18,12 @@
 @import firebase_core;
 #endif
 
+#if __has_include(<firebase_database/FLTFirebaseDatabasePlugin.h>)
+#import <firebase_database/FLTFirebaseDatabasePlugin.h>
+#else
+@import firebase_database;
+#endif
+
 #if __has_include(<google_sign_in_ios/FLTGoogleSignInPlugin.h>)
 #import <google_sign_in_ios/FLTGoogleSignInPlugin.h>
 #else
@@ -41,6 +47,7 @@
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
   [FLTFirebaseAuthPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseAuthPlugin"]];
   [FLTFirebaseCorePlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseCorePlugin"]];
+  [FLTFirebaseDatabasePlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseDatabasePlugin"]];
   [FLTGoogleSignInPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTGoogleSignInPlugin"]];
   [PathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"PathProviderPlugin"]];
   [SharedPreferencesPlugin registerWithRegistrar:[registry registrarForPlugin:@"SharedPreferencesPlugin"]];

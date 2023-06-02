@@ -2,6 +2,7 @@ import 'package:food_ordering_app/Constants/colors.dart';
 import 'package:food_ordering_app/Constants/image_strings.dart';
 import 'package:food_ordering_app/Constants/text_strings.dart';
 import 'package:food_ordering_app/Model/onboarding_Model.dart';
+import 'package:food_ordering_app/View/Loginpage/Loginpage.dart';
 import 'package:food_ordering_app/View/Onboarding_Screen/OnboardingpageWidget.dart';
 import 'package:get/get.dart';
 import 'package:liquid_swipe/PageHelpers/LiquidController.dart';
@@ -53,7 +54,10 @@ class onboardingController extends GetxController {
   //come to nextpage
   animateTonNextSlide(){
     int nextpage = Lcontroller.currentPage +1;
-    Lcontroller.animateToPage(page: nextpage);
-
+    if (nextpage >= pages.length) {
+      Get.offAll(Loginpage());
+    } else {
+      Lcontroller.animateToPage(page: nextpage);
+    }
   }
 }

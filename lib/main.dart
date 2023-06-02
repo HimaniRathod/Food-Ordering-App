@@ -1,5 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:food_ordering_app/View/Dashboard/Dashboard.dart';
+import 'package:food_ordering_app/View/Loginpage/Forgetpassword.dart';
 import 'package:food_ordering_app/View/Loginpage/Loginpage.dart';
 import 'package:food_ordering_app/View/Register/Register.dart';
 import 'package:food_ordering_app/View/SplashScreen.dart';
@@ -28,7 +30,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch:Colors.orange,
       ),
-      home:Loginpage(),
+      home:Splash_Screen(),
+
     );
   }
 }

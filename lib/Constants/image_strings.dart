@@ -11,6 +11,14 @@ const String tonboardingImage3='assets/images/onboarding_images/onboarding-image
 const String slogo='assets/images/Loginimage/logo.png';
 const String sgoogle='assets/images/Loginimage/google.png';
 
+//forgetpassword
+
+const String fpass ='assets/images/Loginimage/fpassword.png';
+
+
+//CardImage of the desktop
+
+const String Cimg = 'assets/images/DashboardImage/Cardimage.png';
 
 //json string(animatedlogo string)
 const String AnimationString='assets/Animated_Logo.json';

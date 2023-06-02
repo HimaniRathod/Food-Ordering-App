@@ -58,7 +58,42 @@ class TTexttheme {
 
   );
 
+//dialogue box
 
+static TextTheme Dtext = TextTheme(
+  titleLarge: GoogleFonts.poppins(
+      fontSize:16,
+      color:brown,
+      fontWeight:FontWeight.w500),
 
+  titleMedium:GoogleFonts.poppins(
+      fontSize:10,
+      color:black,
+      fontWeight:FontWeight.w200),
+);
+
+static TextTheme HText = TextTheme(
+  titleLarge:GoogleFonts.poppins(
+      fontSize:20,
+      color:black,
+      fontWeight:FontWeight.w700),
+
+  titleSmall:GoogleFonts.poppins(
+      fontSize:15,
+      color:grey,
+      fontWeight:FontWeight.w400),
+
+  bodyMedium:GoogleFonts.chelseaMarket(
+    fontWeight:FontWeight.w500,
+    color:brown,
+    fontSize:30
+  ),
+    bodySmall:GoogleFonts.chelseaMarket(
+fontWeight:FontWeight.w200,
+    color:brown,
+    fontSize:15
+)
+
+);
 
 }

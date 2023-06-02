@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_ordering_app/Constants/image_strings.dart';
+import 'package:food_ordering_app/View/Dashboard/Dashboard.dart';
 import 'package:lottie/lottie.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'Onboarding_Screen/Onboarding_Screen.dart';
 
@@ -15,19 +17,13 @@ class Splash_Screen extends StatefulWidget {
 class _Splash_ScreenState extends State<Splash_Screen> {
 
 
-  @override
-  void initState() {
-    //set time to load the next page
-    Future.delayed(
-      Duration(seconds: 8),
-          () {
-        Navigator.pushReplacement(context, MaterialPageRoute(
-            builder: (context) => Onboarding_Screen(),
-        ));
-      },
-    );
 
+  @override
+  initState()  {
     super.initState();
+
+    //for navigation
+    Gotonext();
   }
 
   @override
@@ -44,6 +40,32 @@ class _Splash_ScreenState extends State<Splash_Screen> {
         ),
 
       ),
+    );
+  }
+
+  Future<void> Gotonext() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+
+    bool? check = pref.getBool('OnceLogin');
+    print(check);
+    if(check == true ){
+      Future.delayed(
+        Duration(seconds:7),
+            () {
+          Navigator.pushReplacement(context, MaterialPageRoute(
+            builder: (context) => Dashboard(),
+          ));
+        },
+      );
+    }
+    //set time to load the next page
+    Future.delayed(
+      Duration(seconds:7),
+          () {
+        Navigator.pushReplacement(context, MaterialPageRoute(
+          builder: (context) => Onboarding_Screen(),
+        ));
+      },
     );
   }
 }

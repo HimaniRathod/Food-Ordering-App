@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:food_ordering_app/Constants/Theme.dart';
 import 'package:food_ordering_app/Constants/colors.dart';
 import 'package:food_ordering_app/Controller/Login_Controller.dart';
+import 'package:food_ordering_app/View/Loginpage/Forgetpassword.dart';
 import 'package:get/get.dart';
 
 class LoginForm extends StatelessWidget {
@@ -10,6 +11,7 @@ class LoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
 
     final size = MediaQuery.of(context).size;
 
@@ -37,7 +39,7 @@ class LoginForm extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
       child: Form(
-        key : CLogin.formkey,
+        key :CLogin.lformkey,
         child: Column(
           children: [
             TextFormField(
@@ -105,7 +107,9 @@ class LoginForm extends StatelessWidget {
                     child: Text(
                       'Forget Password?',
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(Forgetpassword());
+                    },
                   ),
                 )
               ],
@@ -126,10 +130,18 @@ class LoginForm extends StatelessWidget {
                 fixedSize: Size(size.width * 0.7, size.height * 0.06),
                 elevation: 5.0,
               ),
-              child: Text(
-                'Log In',
-                style: TTexttheme.LRtext.labelSmall,
-              ),
+              child:Obx(
+                  ()=>
+                    CLogin.isLoading1.value
+                        ? CircularProgressIndicator(
+                      color:white,
+                    ) // Show the loader when isLoading is true
+                        : Text(
+                      'Log In',
+                      style: TTexttheme.LRtext.labelSmall,
+                    ),
+
+              )
             ),
           ],
         ),
