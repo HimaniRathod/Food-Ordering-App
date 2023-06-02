@@ -58,14 +58,16 @@ class _Splash_ScreenState extends State<Splash_Screen> {
         },
       );
     }
+ else{
     //set time to load the next page
-    Future.delayed(
-      Duration(seconds:7),
-          () {
-        Navigator.pushReplacement(context, MaterialPageRoute(
-          builder: (context) => Onboarding_Screen(),
-        ));
-      },
-    );
+      Future.delayed(
+        Duration(seconds:7),
+            () {
+          Navigator.pushReplacement(context, MaterialPageRoute(
+            builder: (context) => Onboarding_Screen(),
+          ));
+        },
+      );
+    }
   }
 }

@@ -8,6 +8,7 @@ import 'package:get/get_core/src/get_main.dart';
 import '../../Constants/Theme.dart';
 import '../../Constants/colors.dart';
 import '../../Constants/image_strings.dart';
+import '../../Controller/Home_Controller.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -21,35 +22,35 @@ class _HomePageState extends State<HomePage> {
   var size;
 
   final LControl = Get.put(LoginController());
+  final HomeControl = Get.put(HomeController());
   @override
   Widget build(BuildContext context) {
     size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar:AppBar(
-        backgroundColor:orange,
-        title:Text('HomePage',style:TextStyle(
-          color:white
-        ),),
-      ),
+      // appBar:AppBar(
+      //   backgroundColor:orange,
+      //   title:Text('HomePage',style:TextStyle(
+      //     color:white
+      //   ),),
+      // ),
       body:Padding(
         padding:EdgeInsets.all(20),
         child:SingleChildScrollView(
 
           child:Column(
             children: [
+              Padding(padding: EdgeInsets.only(bottom:20.0),),
               Row(
                 children: [
                  Container(
-                   height:60,
-                   width:60,
+                   height:70,
+                   width:70,
                    child:IconButton(
                      onPressed: (){
                        LControl.Logout();
                      },
-                     icon:Image(
-                       image:AssetImage(
-                           slogo
-                       ),
+                     icon:Image.network(
+                       HomeControl.photo
                      ),
                    )
 
@@ -58,11 +59,11 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     crossAxisAlignment:CrossAxisAlignment.start,
                     children: [
-                      Text('Name Surname',style:TTexttheme.HText.titleLarge,),
+                      Text(HomeControl.name,style:TTexttheme.HText.titleLarge,),
                       // const Padding(padding:EdgeInsets.only(bottom:5.0),),
-                      Text('xyz@gmail.com',style:TTexttheme.HText.titleSmall),
+                      Text(HomeControl.email,style:TTexttheme.HText.titleSmall),
                       // const Padding(padding:EdgeInsets.only(bottom:5.0),),
-                      Text('+91 4546789781',style:TTexttheme.HText.titleSmall)
+                      Text('+91 ${HomeControl.phone}',style:TTexttheme.HText.titleSmall)
                     ],
                   ),
                 ],
@@ -115,7 +116,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-              )
+              ),
+              Padding(padding: EdgeInsets.all(20.0),),
+             
             ],
           ),
         ),

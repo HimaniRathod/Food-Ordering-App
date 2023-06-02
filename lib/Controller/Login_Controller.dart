@@ -189,6 +189,7 @@ class LoginController extends GetxController{
           print(user.displayName);
           print(user.email);
           print(user.photoURL);
+          print(user.phoneNumber);
 
           isLoading2.value = true;
           Future.delayed(Duration(seconds:2),(){
