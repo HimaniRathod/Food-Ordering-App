@@ -17,6 +17,7 @@ class HomeController extends GetxController {
     String phone = '';
     String email = '';
     String photo='';
+
   Future<void> GetData() async {
 
     User? user = FirebaseAuth.instance.currentUser;
@@ -49,5 +50,6 @@ class HomeController extends GetxController {
     //   print('Email not found or snapshot is empty');
     //   return null; // Handle the case when email is not found
     // }
+    
   }
 }

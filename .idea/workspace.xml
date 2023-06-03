@@ -10,13 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="278f9cb2-5d7d-4069-893a-85fd91e67f92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Controller/Home_Controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/DashboardImage/Vadapau.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/debug_android_application.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/outputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/outputs.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
@@ -28,9 +27,12 @@
       <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/Login_Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/Login_Controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/NOTICES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Constants/Theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constants/Theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/Home_Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/Home_Controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/Dashboard/HomeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Dashboard/HomeScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/SplashScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/SplashScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "F:/MyFlutterProject/TechTV",
+    "last_opened_file_path": "F:/Flutter Projects/Food-Ordering-App",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",

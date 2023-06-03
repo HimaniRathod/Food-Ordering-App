@@ -33,96 +33,126 @@ class _HomePageState extends State<HomePage> {
       //     color:white
       //   ),),
       // ),
-      body:Padding(
-        padding:EdgeInsets.all(20),
-        child:SingleChildScrollView(
+      body:SingleChildScrollView(
+        padding:EdgeInsets.all(20.0),
+        child:Column(
+          children: [
+            const Padding(padding: EdgeInsets.only(bottom:20.0),),
+            Row(
+              children: [
+                Container(
+                    height:70,
+                    width:70,
+                    child:IconButton(
+                      onPressed: (){
+                        LControl.Logout();
+                      },
+                      icon:Image.network(
+                          HomeControl.photo
+                      ),
+                    )
 
-          child:Column(
-            children: [
-              Padding(padding: EdgeInsets.only(bottom:20.0),),
-              Row(
-                children: [
-                 Container(
-                   height:70,
-                   width:70,
-                   child:IconButton(
-                     onPressed: (){
-                       LControl.Logout();
-                     },
-                     icon:Image.network(
-                       HomeControl.photo
-                     ),
-                   )
-
-                 ),
-                  const Padding(padding: EdgeInsets.only(right:20.0),),
-                  Column(
+                ),
+                const Padding(padding: EdgeInsets.only(right:20.0),),
+                Column(
+                  crossAxisAlignment:CrossAxisAlignment.start,
+                  children: [
+                    Text(HomeControl.name,style:TTexttheme.HText.titleLarge,),
+                    // const Padding(padding:EdgeInsets.only(bottom:5.0),),
+                    Text(HomeControl.email,style:TTexttheme.HText.titleSmall),
+                    // const Padding(padding:EdgeInsets.only(bottom:5.0),),
+                    Text('+91 ${HomeControl.phone}',style:TTexttheme.HText.titleSmall)
+                  ],
+                ),
+              ],
+            ),
+            Padding(padding: EdgeInsets.only(bottom:10),),
+            Card(
+              color:orange,
+              shape:RoundedRectangleBorder(
+                borderRadius:BorderRadius.circular(20),
+              ),
+              child:SizedBox(
+                height:size.height *0.16,
+                width:size.width,
+                child: Padding(
+                  padding:EdgeInsets.all(20.0),
+                  child:Row(
                     crossAxisAlignment:CrossAxisAlignment.start,
                     children: [
-                      Text(HomeControl.name,style:TTexttheme.HText.titleLarge,),
-                      // const Padding(padding:EdgeInsets.only(bottom:5.0),),
-                      Text(HomeControl.email,style:TTexttheme.HText.titleSmall),
-                      // const Padding(padding:EdgeInsets.only(bottom:5.0),),
-                      Text('+91 ${HomeControl.phone}',style:TTexttheme.HText.titleSmall)
+                      Image.asset(Cimg),
+                      const Padding(padding:EdgeInsets.only(right:10.0),),
+                      Column(
+                        mainAxisAlignment:MainAxisAlignment.spaceAround,
+                        children: [
+                          TyperAnimatedTextKit(
+                            text: ['...Have it in\n\t\t Your Day...'],
+                            textAlign: TextAlign.justify,
+                            textStyle:TTexttheme.HText.bodyMedium,// speed: Duration(milliseconds: 200),
+                            pause: Duration(milliseconds: 1000),
+                            repeatForever: true,
+                            displayFullTextOnTap: true,
+                            stopPauseOnTap: true,
+                            speed: Duration(milliseconds: 200),
+
+                          ),
+                          Padding(padding: EdgeInsets.only(bottom: 5.0),),
+                          FadeAnimatedTextKit(
+                            text: ['Get your Order in 15 min!'],
+                            textAlign: TextAlign.justify,
+                            textStyle:TTexttheme.HText.bodySmall,// speed: Duration(milliseconds: 200),
+                            pause: Duration(milliseconds: 500),
+                            repeatForever: true,
+                            displayFullTextOnTap: true,
+                            stopPauseOnTap: true,
+                            // speed: Duration(milliseconds: 200),
+
+                          ),
+                        ],
+                      )
                     ],
                   ),
-                ],
-              ),
-              Padding(padding: EdgeInsets.only(bottom:10),),
-              Card(
-                color:orange,
-                shape:RoundedRectangleBorder(
-                  borderRadius:BorderRadius.circular(20),
                 ),
-                child:SizedBox(
-                  height:size.height *0.16,
-                  width:size.width,
-                  child: Padding(
-                    padding:EdgeInsets.all(20.0),
-                    child:Row(
-                      crossAxisAlignment:CrossAxisAlignment.start,
-                      children: [
-                       Image.asset(Cimg),
-                        const Padding(padding:EdgeInsets.only(right:10.0),),
-                        Column(
-                          mainAxisAlignment:MainAxisAlignment.spaceAround,
-                          children: [
-                            TyperAnimatedTextKit(
-                              text: ['...Have it in\n\t\t Your Day...'],
-                              textAlign: TextAlign.justify,
-                              textStyle:TTexttheme.HText.bodyMedium,// speed: Duration(milliseconds: 200),
-                              pause: Duration(milliseconds: 1000),
-                              repeatForever: true,
-                              displayFullTextOnTap: true,
-                              stopPauseOnTap: true,
-                              speed: Duration(milliseconds: 200),
+              ),
+            ),
+            Padding(padding: EdgeInsets.all(10.0),),
+            AspectRatio(aspectRatio:size.width/size.height,
+              child:GridView.count(
+                crossAxisCount: 2,
+                mainAxisSpacing:20.0,
+                children:List.generate(50, (index) {
 
-                            ),
-                            Padding(padding: EdgeInsets.only(bottom: 5.0),),
-                            FadeAnimatedTextKit(
-                              text: ['Get your Order in 15 min!'],
-                              textAlign: TextAlign.justify,
-                              textStyle:TTexttheme.HText.bodySmall,// speed: Duration(milliseconds: 200),
-                              pause: Duration(milliseconds: 500),
-                              repeatForever: true,
-                              displayFullTextOnTap: true,
-                              stopPauseOnTap: true,
-                              // speed: Duration(milliseconds: 200),
+                  return GestureDetector(
 
+                    child: Card(
+                      elevation:16.0,
+                      shape:RoundedRectangleBorder(
+                        borderRadius:BorderRadius.circular(8.0),
+                      ),
+                      child:Column(
+                        mainAxisAlignment:MainAxisAlignment.spaceAround,
+                        children: [
+                          const Padding(padding: EdgeInsets.only(bottom:7.0),),
+                          SizedBox(
+
+                            // height:size.height*0.16,
+                            child:Image(
+                              image:AssetImage(
+                                  'assets/images/DashboardImage/Vadapau.png'
+                              ),
                             ),
-                          ],
-                        )
-                      ],
+                          ),
+
+                          Text('Vadapau',style: TTexttheme.HText.titleMedium,),
+
+                        ],
+                      ),
                     ),
-                  ),
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(20.0),),
-             
-            ],
-          ),
+                  );
+                } ),),),
+          ],
         ),
-      )
+      ),
     );
   }
 }
