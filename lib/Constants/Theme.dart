@@ -48,10 +48,15 @@ class TTexttheme {
     titleSmall: GoogleFonts.poppins(
         fontSize: 15, color: grey, fontWeight: FontWeight.w400),
     bodyMedium: GoogleFonts.chelseaMarket(
-        fontWeight: FontWeight.w500, color: brown, fontSize: 30),
+        fontWeight: FontWeight.w500, color: brown, fontSize:26),
     bodySmall: GoogleFonts.chelseaMarket(
-        fontWeight: FontWeight.w200, color: brown, fontSize: 15),
+        fontWeight: FontWeight.w200, color: brown, fontSize: 13),
+    displayMedium:GoogleFonts.poppins(
+      fontSize:20, color: black, fontWeight: FontWeight.w200),
     titleMedium: GoogleFonts.poppins(
-        fontSize: 16, color: brown, fontWeight: FontWeight.w500),);
+        fontSize: 16, color: brown, fontWeight: FontWeight.w500,),
+  displaySmall: GoogleFonts.poppins(
+      fontSize:20, color: black, fontWeight: FontWeight.w400),);
+
 
 }

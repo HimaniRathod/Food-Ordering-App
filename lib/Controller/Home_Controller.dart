@@ -1,17 +1,62 @@
+import 'dart:convert';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/services.dart';
+import 'package:food_ordering_app/Controller/FoodCategoryController.dart';
+import 'package:food_ordering_app/View/Dashboard/Food_category.dart';
 import 'package:get/get.dart';
 
-class HomeController extends GetxController {
-  final ref = FirebaseDatabase.instance.reference();
+import '../Constants/text_strings.dart';
 
+class HomeController extends GetxController {
+
+  final DatabaseReference  ref = FirebaseDatabase.instance.reference();
+
+  final RxBool isLoading = false.obs;
   @override
   void onInit() {
     // TODO: implement onInit
     super.onInit();
     GetData();
+    fetchdata();
+    Future.delayed(
+      const Duration(milliseconds: 3000),
+          () {
+      isLoading.value = true;
+      },
+    );
+
   }
 
+  //fetch the data from the jsonfile
+  List Mainitems = [];
+  List<String> names = [];
+  List<String> ids =[];
+  Future<void> fetchdata() async {
+    Mainitems.clear();
+    names.clear();
+    ids.clear();
+    String jsonString = await rootBundle.loadString(dataString);
+    Map<String,dynamic> data = jsonDecode(jsonString);
+    print(data);
+    Mainitems = data['MainItem'];
+    for(var item in Mainitems){
+     String name = item['name'];
+     String id = item['id'];
+      names.add(name);
+      ids.add(id);
+    }
+      print(names);
+    print(ids);
+    print(names.length);
+  }
+
+ //when click on item
+  selectItem(int index){
+    SelectedId.id = ids[index];
+    Get.to(FoodCategory());
+  }
   //initialize variable
     String name = '';
     String phone = '';
@@ -50,6 +95,13 @@ class HomeController extends GetxController {
     //   print('Email not found or snapshot is empty');
     //   return null; // Handle the case when email is not found
     // }
-    
+
   }
+
+
+}
+
+class SelectedId {
+
+  static String id ='';
 }

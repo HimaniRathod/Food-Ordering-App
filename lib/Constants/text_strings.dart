@@ -15,3 +15,6 @@ const String onBoardingCounter3="3/3";
 //loginpage texts
 const String LoginTitle="Hi,Welcome back!";
 const String Loginsubtitle="Login to your account";
+
+//datajson String
+const String dataString = 'assets/data.json';

@@ -101,6 +101,12 @@ class LoginController extends GetxController{
      super.dispose();
    }
 
+  @override
+  void onClose() {
+    // Perform cleanup tasks or release resources here
+    super.onClose();
+  }
+
   // _initialScreen(User? user){
   //   if(user==null){
   //     print("Login page");
@@ -183,6 +189,8 @@ class LoginController extends GetxController{
 
         UserCredential userCredential = await FirebaseAuth.instance
             .signInWithCredential(credential);
+        SharedPreferences pref = await SharedPreferences.getInstance();
+        pref.setBool('OnceLogin', true);
         User? user = userCredential.user;
 
         if (user !=null) {
