@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/services.dart';
-import 'package:food_ordering_app/Controller/FoodCategoryController.dart';
+import 'package:food_ordering_app/Controller/FoodCategory_Controller.dart';
 import 'package:food_ordering_app/View/Dashboard/Food_category.dart';
 import 'package:get/get.dart';
 
@@ -55,6 +55,7 @@ class HomeController extends GetxController {
  //when click on item
   selectItem(int index){
     SelectedId.id = ids[index];
+
     Get.to(FoodCategory());
   }
   //initialize variable

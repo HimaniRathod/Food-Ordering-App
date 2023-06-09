@@ -56,7 +56,14 @@ class TTexttheme {
     titleMedium: GoogleFonts.poppins(
         fontSize: 16, color: brown, fontWeight: FontWeight.w500,),
   displaySmall: GoogleFonts.poppins(
-      fontSize:20, color: black, fontWeight: FontWeight.w400),);
+      fontSize:20, color: black, fontWeight: FontWeight.w400),
+  labelMedium:GoogleFonts.poppins(
+      fontSize: 20, color: black, fontWeight: FontWeight.w500),
+  labelSmall:GoogleFonts.poppins(
+    fontSize:20.0,color: orange,fontWeight:FontWeight.w500),
+     labelLarge: GoogleFonts.poppins(
+         fontSize:20.0,color:white,fontWeight:FontWeight.w500),
+  );
 
 
 }

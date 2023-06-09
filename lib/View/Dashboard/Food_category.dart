@@ -5,7 +5,7 @@ import 'package:food_ordering_app/Constants/colors.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-import '../../Controller/FoodCategoryController.dart';
+import '../../Controller/FoodCategory_Controller.dart';
 import '../../Controller/Home_Controller.dart';
 
 class FoodCategory extends StatefulWidget {
@@ -50,25 +50,32 @@ class _FoodCategoryState extends State<FoodCategory> {
                       child:Container(
                         padding:EdgeInsets.only(right:15.0),
                         child:Obx(()=>ChoiceChip(
-                          shape:RoundedRectangleBorder(
+                          selected: FoodControl.isSelected.value == HomeControl.names.indexWhere((element) => element == HomeControl.names[index]),
+                          shape:FoodControl.isSelected.value == HomeControl.names.indexWhere((element) => element == HomeControl.names[index])
+                              ? RoundedRectangleBorder(
+                              borderRadius:BorderRadius.circular(15.0),
+
+
+                          ):RoundedRectangleBorder(
                               borderRadius:BorderRadius.circular(15.0),
                               side:BorderSide(color:dgreen)
 
                           ),
                           padding:EdgeInsets.fromLTRB(5, 10, 5, 10),
-                          selected: FoodControl.isSelected.value == HomeControl.names.indexWhere((element) => element == HomeControl.names[index]),
                           selectedColor:Color.lerp(Color(0xffF88704),Color(0xffE1701D), 0.81),
+                          backgroundColor:Colors.white,
                           onSelected: (bool selected) {
                             setState(() {
                               FoodControl.isSelected.value = selected ? index:HomeControl.ids.indexWhere((element) => element == FoodControl.fetchid);
                             });
-                            FoodControl.Onselect(HomeControl.names.indexWhere((element) => element == HomeControl.names[index]));
+                            FoodControl.OnsCategoryselect(HomeControl.names.indexWhere((element) => element == HomeControl.names[index]));
                           },
 
                           label: Text(HomeControl.names[index],style:TTexttheme.HText.displaySmall,),
                           avatar:CircleAvatar(
                             radius:50.0,
-                            backgroundImage:AssetImage('assets/images/DashboardImage/Jumbo Vadapau.png',),
+                            backgroundImage:AssetImage( 'assets/images/DashboardImage/FoodImage/${HomeControl.names[index]}.png',
+                                ),
                           ),
                         ),)
                       )
@@ -76,7 +83,7 @@ class _FoodCategoryState extends State<FoodCategory> {
                   },),
                 ),
               ),
-              const Padding(padding: EdgeInsets.only(bottom:5.0),),
+              const Padding(padding: EdgeInsets.only(bottom:10.0),),
               Obx(
                 () => FoodControl.isLoading.value
                     ? AspectRatio(
@@ -94,7 +101,9 @@ class _FoodCategoryState extends State<FoodCategory> {
                           children:
                               List.generate(FoodControl.snames.length, (index) {
                             return GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                FoodControl.OnSelectItem(index);
+                              },
                               child: Card(
                                 elevation: 16.0,
                                 shape: RoundedRectangleBorder(
@@ -106,10 +115,12 @@ class _FoodCategoryState extends State<FoodCategory> {
                                   children: [
                                     SizedBox(
                                       width:size.width,
+                                       height:MediaQuery.of(context).size.height * (120.0 / 812.0),
                                       child: Image(
                                         image: AssetImage(
-                                            'assets/images/DashboardImage/Jumbo Vadapau.png'),
-                                        fit:BoxFit.fitWidth,
+                                          'assets/images/DashboardImage/FoodImage/${FoodControl.fname}.png',
+                                        ),
+                                        fit:BoxFit.fill,
 
 
                                       ),
@@ -128,7 +139,7 @@ class _FoodCategoryState extends State<FoodCategory> {
                                                     .HText.titleMedium,
                                               ),
                                                Text(
-                                                'Rs. 30.00  ',
+                                                'Rs. ${FoodControl.Prices[index]}',
                                                 style:
                                                     TTexttheme.HText.titleSmall,
                                               ),

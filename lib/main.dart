@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:food_ordering_app/View/Dashboard/Food_category.dart';
 import 'package:food_ordering_app/View/Dashboard/HomeScreen.dart';
 import 'package:food_ordering_app/View/SplashScreen.dart';
 import 'package:get/get.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch:Colors.orange,
       ),
-      home:HomePage(),
+      home:Splash_Screen(),
 
     );
   }

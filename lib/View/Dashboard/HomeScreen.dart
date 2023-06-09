@@ -149,6 +149,7 @@ class _HomePageState extends State<HomePage> {
                 child: GridView.count(
                    padding: EdgeInsets.zero,
                   // physics: NeverScrollableScrollPhysics(),
+                  clipBehavior:Clip.antiAliasWithSaveLayer,
                   shrinkWrap: true,
                   crossAxisCount: 2,
                   mainAxisSpacing: 20.0,
@@ -178,7 +179,8 @@ class _HomePageState extends State<HomePage> {
                               // height:size.height*0.2,
                               child: Image(
                                 image: AssetImage(
-                                    'assets/images/DashboardImage/Vadapau.png'),
+                                  'assets/images/DashboardImage/FoodImage/${HomeControl.names[index]}.png',
+                                ),
                               ),
                             ),
                             Padding(

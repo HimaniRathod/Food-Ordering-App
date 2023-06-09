@@ -19,6 +19,8 @@ const String fpass ='assets/images/Loginimage/fpassword.png';
 //CardImage of the desktop
 
 const String Cimg = 'assets/images/DashboardImage/Cardimage.png';
+const String Time = 'assets/images/DashboardImage/Time.png';
 
 //json string(animatedlogo string)
 const String AnimationString='assets/Animated_Logo.json';
+

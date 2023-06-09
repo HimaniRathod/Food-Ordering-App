@@ -3,6 +3,7 @@
     {
       "id": "ID1",
       "name": "Vadapau",
+      "image": "Vadapau",
       "subItems": [
         {
           "id": "SubID1",
@@ -65,6 +66,7 @@
     {
       "id": "ID3",
       "name": "Dabeli",
+
       "subItems": [
         {
           "id": "SubID6",
@@ -251,9 +253,13 @@
   ],
 
   "Extras": [{
-    "Spicy": 0,
-    "Cheese": 20.00,
-    "Double Cheese":40.00
-
-  }]
+    "name": "Spicy",
+    "Price": 10},
+    {
+      "name": "Cheese",
+      "Price": 20},
+    {
+      "name": "Extra Cheese",
+      "Price": 30}
+  ]
 }
