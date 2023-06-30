@@ -55,7 +55,7 @@ class FoodCategoryController extends GetxController {
 
     for (var items in SubItems) {
       String name = items['name'];
-      int price = items['price'];
+      double price = items['price'];
       snames.add(name);
       Prices.add(price);
     }
@@ -78,16 +78,17 @@ class FoodCategoryController extends GetxController {
 
     SelectedSubitemId.name = fname;
     SelectedSubitemId.subname = SubItems[index];
-    SelectedSubitemId.price = Prices[index].toString();
-
+    SelectedSubitemId.price = Prices[index];
+    print(Prices[index]);
     Get.to(SelectedFood());
   }
+
 }
 
 class SelectedSubitemId {
 
   static String name ='';
   static dynamic subname ;
-  static String price = '';
+  static double price = 0.0;
 }
 

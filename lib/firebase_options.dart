@@ -44,6 +44,8 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
+    databaseURL: 'https://food-ordering-app-e30fd-default-rtdb.firebaseio.com/',
+
     apiKey: 'AIzaSyAb8gmUT9-1VCoO4BBCs-HaYBylPyvcCoQ',
     appId: '1:363409048783:web:0ef6562ca478ca3914e3ba',
     messagingSenderId: '363409048783',

@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:food_ordering_app/Constants/Theme.dart';
 import 'package:food_ordering_app/Constants/colors.dart';
 import 'package:food_ordering_app/Constants/image_strings.dart';
+import 'package:food_ordering_app/Controller/Cart_Controller.dart';
 import 'package:food_ordering_app/Controller/SelectedFood_Controller.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import '../../Model/Cart_Model.dart';
 import 'Cart.dart';
 
 class SelectedFood extends StatefulWidget {
@@ -18,6 +20,9 @@ class SelectedFood extends StatefulWidget {
 
 class _SelectedFoodState extends State<SelectedFood> {
   final SelectedFoodControl = Get.put(SelectedFoodController());
+  final cartProvider = Get.find<SelectedFoodController>();
+
+
 
   var size;
 
@@ -102,13 +107,16 @@ class _SelectedFoodState extends State<SelectedFood> {
                     alignment: Alignment.centerLeft,
                     child: Row(
                       children: [
-                        InkWell(
-                          onTap: () {
-                            SelectedFoodControl.DecreaseFood();
-                          },
-                          child: Icon(Icons.indeterminate_check_box,
-                              color: orange),
-                        ),
+                       Obx(() =>  InkWell(
+
+                         onTap: SelectedFoodControl.FCount.value >1 ?() {
+
+                       SelectedFoodControl.DecreaseFood();
+                       }:null,
+
+                         child: Icon(Icons.indeterminate_check_box,
+                             color: SelectedFoodControl.FCount.value >1 ?orange:grey),
+                       ),),
                         const Padding(padding: EdgeInsets.only(right: 10.0)),
                         Obx(() => Text(
                               SelectedFoodControl.FCount.toString(),
@@ -237,7 +245,11 @@ class _SelectedFoodState extends State<SelectedFood> {
                           backgroundColor: Colors.white54,
                         ),
                         onPressed: () {
+
+                          final item = CartItem(mname:SelectedFoodControl.MainItem,name: SelectedFoodControl.Subitem, price: SelectedFoodControl.MainPrice,);
+                          cartProvider.addtoCart(item);
                           Get.to(Cart());
+
                         },
                         child: Text(
                           'Add to Cart',

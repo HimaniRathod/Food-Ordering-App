@@ -54,7 +54,7 @@ class TTexttheme {
     displayMedium:GoogleFonts.poppins(
       fontSize:20, color: black, fontWeight: FontWeight.w200),
     titleMedium: GoogleFonts.poppins(
-        fontSize: 16, color: brown, fontWeight: FontWeight.w500,),
+        fontSize: 16, color: black , fontWeight: FontWeight.w500,),
   displaySmall: GoogleFonts.poppins(
       fontSize:20, color: black, fontWeight: FontWeight.w400),
   labelMedium:GoogleFonts.poppins(

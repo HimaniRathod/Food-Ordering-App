@@ -1,18 +1,28 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:food_ordering_app/Controller/SelectedFood_Controller.dart';
 import 'package:food_ordering_app/View/Dashboard/Food_category.dart';
 import 'package:food_ordering_app/View/Dashboard/HomeScreen.dart';
+import 'package:food_ordering_app/View/Loginpage/Loginpage.dart';
 import 'package:food_ordering_app/View/SplashScreen.dart';
 import 'package:get/get.dart';
+import 'package:provider/provider.dart';
 
 import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
     await Firebase.initializeApp(
+
       options: DefaultFirebaseOptions.currentPlatform,
     );
-  runApp(const MyApp());
+  runApp(
+
+       MyApp(),
+
+     );
 }
 
 class MyApp extends StatelessWidget {

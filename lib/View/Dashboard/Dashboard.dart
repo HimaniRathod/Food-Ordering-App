@@ -32,14 +32,19 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-        body:Obx(() => IndexedStack(
-          index:DController.currentIndex.value,
-          children:[
-            HomePage(),
-            Profile()
-          ],
-        ),),
-        bottomNavigationBar:BottomNavigationBar(
+        body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints) {
+      return Obx(() => IndexedStack(
+        index: DController.currentIndex.value,
+        children: [
+          HomePage(),
+          Profile(),
+        ],
+      ));
+    },
+    ),
+
+    bottomNavigationBar:BottomNavigationBar(
           backgroundColor:orange,
           selectedItemColor:white,
           unselectedItemColor:brown,

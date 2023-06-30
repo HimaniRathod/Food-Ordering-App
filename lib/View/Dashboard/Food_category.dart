@@ -26,141 +26,150 @@ class _FoodCategoryState extends State<FoodCategory> {
   Widget build(BuildContext context) {
     size = MediaQuery.of(context).size;
     return Scaffold(
-      body: SingleChildScrollView(
-          padding: EdgeInsets.all(15),
-          child: Column(
-            children: [
-              const Padding(
-                padding: EdgeInsets.only(bottom: 25.0),
-              ),
-              Searchbar(),
-              const Padding(
-                padding: EdgeInsets.only(bottom: 15.0),
-              ),
-              SingleChildScrollView(
-                scrollDirection:Axis.horizontal,
+      body:Center(
+        child:SafeArea(
+          bottom:true,
+          child:AspectRatio(
+            aspectRatio: size.width / size.height,
+           child:SingleChildScrollView(
+               padding: EdgeInsets.all(15),
+               child: Column(
+                 children: [
+                   // const Padding(
+                   //   padding: EdgeInsets.only(bottom: 25.0),
+                   // ),
+                   Searchbar(),
+                   const Padding(
+                     padding: EdgeInsets.only(bottom: 15.0),
+                   ),
+                   SingleChildScrollView(
+                     scrollDirection:Axis.horizontal,
 
-                child:Row(
+                     child:Row(
 
-                  children: List.generate(HomeControl.names.length, (index) {
+                       children: List.generate(HomeControl.names.length, (index) {
 
-                    return GestureDetector(
+                         return GestureDetector(
 
-                      onTap: () {},
-                      child:Container(
-                        padding:EdgeInsets.only(right:15.0),
-                        child:Obx(()=>ChoiceChip(
-                          selected: FoodControl.isSelected.value == HomeControl.names.indexWhere((element) => element == HomeControl.names[index]),
-                          shape:FoodControl.isSelected.value == HomeControl.names.indexWhere((element) => element == HomeControl.names[index])
-                              ? RoundedRectangleBorder(
-                              borderRadius:BorderRadius.circular(15.0),
-
-
-                          ):RoundedRectangleBorder(
-                              borderRadius:BorderRadius.circular(15.0),
-                              side:BorderSide(color:dgreen)
-
-                          ),
-                          padding:EdgeInsets.fromLTRB(5, 10, 5, 10),
-                          selectedColor:Color.lerp(Color(0xffF88704),Color(0xffE1701D), 0.81),
-                          backgroundColor:Colors.white,
-                          onSelected: (bool selected) {
-                            setState(() {
-                              FoodControl.isSelected.value = selected ? index:HomeControl.ids.indexWhere((element) => element == FoodControl.fetchid);
-                            });
-                            FoodControl.OnsCategoryselect(HomeControl.names.indexWhere((element) => element == HomeControl.names[index]));
-                          },
-
-                          label: Text(HomeControl.names[index],style:TTexttheme.HText.displaySmall,),
-                          avatar:CircleAvatar(
-                            radius:50.0,
-                            backgroundImage:AssetImage( 'assets/images/DashboardImage/FoodImage/${HomeControl.names[index]}.png',
-                                ),
-                          ),
-                        ),)
-                      )
-                    );
-                  },),
-                ),
-              ),
-              const Padding(padding: EdgeInsets.only(bottom:10.0),),
-              Obx(
-                () => FoodControl.isLoading.value
-                    ? AspectRatio(
-                        aspectRatio: size.width / size.height,
-                        child: GridView.count(
-                          padding: EdgeInsets.zero,
-                          // physics: NeverScrollableScrollPhysics(),
-                          shrinkWrap: true,
-                          crossAxisCount: 2,
-                          mainAxisSpacing: 20.0,
-                          crossAxisSpacing: 15.0,
-                          childAspectRatio:
-                              (size.width /2.0) / (size.height / 3.4),
-                          //for card height
-                          children:
-                              List.generate(FoodControl.snames.length, (index) {
-                            return GestureDetector(
-                              onTap: () {
-                                FoodControl.OnSelectItem(index);
-                              },
-                              child: Card(
-                                elevation: 16.0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                clipBehavior:Clip.antiAliasWithSaveLayer,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    SizedBox(
-                                      width:size.width,
-                                       height:MediaQuery.of(context).size.height * (120.0 / 812.0),
-                                      child: Image(
-                                        image: AssetImage(
-                                          'assets/images/DashboardImage/FoodImage/${FoodControl.fname}.png',
-                                        ),
-                                        fit:BoxFit.fill,
+                             onTap: () {},
+                             child:Container(
+                                 padding:EdgeInsets.only(right:15.0),
+                                 child:Obx(()=>ChoiceChip(
+                                   selected: FoodControl.isSelected.value == HomeControl.names.indexWhere((element) => element == HomeControl.names[index]),
+                                   shape:FoodControl.isSelected.value == HomeControl.names.indexWhere((element) => element == HomeControl.names[index])
+                                       ? RoundedRectangleBorder(
+                                     borderRadius:BorderRadius.circular(15.0),
 
 
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.all(10.0),
-                                      child: SizedBox(
-                                          width: size.width,
-                                          child: Column(
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                FoodControl.snames[index],
-                                                style: TTexttheme
-                                                    .HText.titleMedium,
-                                              ),
-                                               Text(
-                                                'Rs. ${FoodControl.Prices[index]}',
-                                                style:
-                                                    TTexttheme.HText.titleSmall,
-                                              ),
-                                            ],
-                                          )),
-                                    )
-                                  ],
-                                ),
-                              ),
-                            );
-                          }),
-                        ),
-                      )
-                    : Center(
-                        child: CircularProgressIndicator(
-                          color: orange,
-                        ),
-                      ),
-              )
-            ],
-          )),
+                                   ):RoundedRectangleBorder(
+                                       borderRadius:BorderRadius.circular(15.0),
+                                       side:BorderSide(color:dgreen)
+
+                                   ),
+                                   padding:EdgeInsets.fromLTRB(5, 10, 5, 10),
+                                   selectedColor:Color.lerp(Color(0xffF88704),Color(0xffE1701D), 0.81),
+                                   backgroundColor:Colors.white,
+                                   onSelected: (bool selected) {
+                                     setState(() {
+                                       FoodControl.isSelected.value = selected ? index:HomeControl.ids.indexWhere((element) => element == FoodControl.fetchid);
+                                     });
+                                     FoodControl.OnsCategoryselect(HomeControl.names.indexWhere((element) => element == HomeControl.names[index]));
+                                   },
+
+                                   label: Text(HomeControl.names[index],style:TTexttheme.HText.displaySmall,),
+                                   avatar:CircleAvatar(
+                                     radius:50.0,
+                                     backgroundImage:AssetImage( 'assets/images/DashboardImage/FoodImage/${HomeControl.names[index]}.png',
+                                     ),
+                                   ),
+                                 ),)
+                             )
+                         );
+                       },),
+                     ),
+                   ),
+                   const Padding(padding: EdgeInsets.only(bottom:10.0),),
+                   Obx(
+                         () => FoodControl.isLoading.value
+                         ? AspectRatio(
+                       aspectRatio: size.width / size.height,
+                       child: GridView.count(
+                         padding: EdgeInsets.zero,
+                         physics: NeverScrollableScrollPhysics(),
+                         shrinkWrap: true,
+                         crossAxisCount: 2,
+                         mainAxisSpacing: 20.0,
+                         crossAxisSpacing: 15.0,
+                         childAspectRatio:
+                         (size.width /2.0) / (size.height / 3.4),
+                         //for card height
+                         children:
+                         List.generate(FoodControl.snames.length, (index) {
+                           return GestureDetector(
+                             onTap: () {
+                               FoodControl.OnSelectItem(index);
+                             },
+                             child: Card(
+                               elevation: 16.0,
+                               shape: RoundedRectangleBorder(
+                                 borderRadius: BorderRadius.circular(8.0),
+                               ),
+                               clipBehavior:Clip.antiAliasWithSaveLayer,
+                               child: Column(
+                                 mainAxisAlignment: MainAxisAlignment.start,
+                                 children: [
+                                   SizedBox(
+                                     width:size.width,
+                                     height:MediaQuery.of(context).size.height * 0.11,
+                                     child: Image(
+                                       image: AssetImage(
+                                         'assets/images/DashboardImage/FoodImage/${FoodControl.fname}.png',
+                                       ),
+                                       fit:BoxFit.fill
+                                       ,
+
+
+                                     ),
+                                   ),
+                                   Padding(
+                                     padding: EdgeInsets.all(10.0),
+                                     child: SizedBox(
+                                         width: size.width,
+                                         child: Column(
+                                           crossAxisAlignment:
+                                           CrossAxisAlignment.start,
+                                           children: [
+                                             Text(
+                                               FoodControl.snames[index],
+                                               style: TTexttheme
+                                                   .HText.titleMedium,
+                                             ),
+                                             Text(
+                                               'Rs. ${FoodControl.Prices[index]}',
+                                               style:
+                                               TTexttheme.HText.titleSmall,
+                                             ),
+                                           ],
+                                         )),
+                                   )
+                                 ],
+                               ),
+                             ),
+                           );
+                         }),
+                       ),
+                     )
+                         : Center(
+                       child: CircularProgressIndicator(
+                         color: orange,
+                       ),
+                     ),
+                   )
+                 ],
+               )),
+          )
+        ),
+      )
     );
   }
 

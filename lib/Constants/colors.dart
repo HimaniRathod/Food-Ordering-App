@@ -16,4 +16,5 @@ const white = Colors.white;
 const grey= Color(0xff949090);
 const dgreen=Color(0xff37474F);
 const red = Colors.red;
+const blue = Color(0xffBDCDD6);
 

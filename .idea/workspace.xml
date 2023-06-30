@@ -10,39 +10,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="278f9cb2-5d7d-4069-893a-85fd91e67f92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/DashboardImage/FoodImage/FoodImage path.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/DashboardImage/Time.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Controller/SelectedFood_Controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/View/Dashboard/Cart.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/View/Dashboard/SelectedFood.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Controller/Cart_Controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Model/Cart_Model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/View/Shimmer/HomePage_Shimmer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Rules/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Rules/000003.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Rules/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Rules/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/000003.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension State/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension State/000003.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension State/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension State/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Favicons" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Favicons" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/History" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/History" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/History-journal" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/History-journal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/debug_android_application.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/flutter_assets.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/kernel_snapshot.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/outputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/4c9950594408c81a455778a98e1d2c5d/outputs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dart_plugin_registrant.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/DashboardImage/Jumbo Vadapau.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/DashboardImage/FoodImage/Jumbo Vadapau.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/DashboardImage/Vadapau.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/DashboardImage/FoodImage/Vadapau.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/a63026f0f1fd031b877b7d71ff918510/gen_dart_plugin_registrant.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/a63026f0f1fd031b877b7d71ff918510/gen_dart_plugin_registrant.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/NOTICES.Z" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/NOTICES.Z" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/assets/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/assets/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/assets/images/DashboardImage/Jumbo%20Vadapau.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/assets/images/DashboardImage/Vadapau.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/AssetManifest.json.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/AssetManifest.json.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/NOTICES.Z.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/NOTICES.Z.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/data.json.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/data.json.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/images/DashboardImage/Jumbo%20Vadapau.png.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/images/DashboardImage/Vadapau.png.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/NOTICES.Z" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/NOTICES.Z" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/assets/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/assets/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/assets/images/DashboardImage/Jumbo%20Vadapau.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/assets/images/DashboardImage/Vadapau.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
@@ -50,17 +53,21 @@
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/NOTICES" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/assets/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/DashboardImage/Cardimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/assets/images/DashboardImage/Cardimage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/DashboardImage/Jumbo%20Vadapau.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/DashboardImage/Vadapau.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constants/Theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constants/Theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Constants/image_strings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constants/image_strings.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/FoodCategoryController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/FoodCategory_Controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Constants/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constants/colors.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/FoodCategory_Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/FoodCategory_Controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Controller/Home_Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/Home_Controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/SelectedFood_Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/SelectedFood_Controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Dashboard/Cart.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Dashboard/Cart.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Dashboard/Dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Dashboard/Dashboard.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/Dashboard/Food_category.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Dashboard/Food_category.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/Dashboard/HomeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Dashboard/HomeScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Dashboard/SelectedFood.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Dashboard/SelectedFood.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/firebase_options.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/firebase_options.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +109,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Flutter Projects/Food-Ordering-App/assets/images/DashboardImage&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/MyFlutterProject/TechTV&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
